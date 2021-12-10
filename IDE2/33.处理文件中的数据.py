@@ -1,4 +1,4 @@
-f = open('scores.txt',encoding='utf-8')
+f = open('scores.txt', encoding='utf-8')
 #取得文件中的数据。因为每一行都是一条学生成绩的记录，所以用readlines
 lines =f.readlines()
 print(lines)
@@ -37,6 +37,6 @@ print(result)
 results.append(result)
 
 #print(results)
-output = open('result.txt','w',encoding='UTF-8')
+output = open('result.txt', 'w', encoding='UTF-8')
 output.writelines(results)
 output.close()

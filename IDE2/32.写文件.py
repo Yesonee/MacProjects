@@ -19,5 +19,5 @@ data1 = 'I will better'
 f = open('output.txt')
 data0 = f.read()
 print(data0)
-f1 = open('123.txt','w')
+f1 = open('123.txt', 'w')
 f.close()
