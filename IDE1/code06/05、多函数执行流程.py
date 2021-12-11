@@ -12,7 +12,8 @@ def test1():
 def test2():
     print(glo_num)
 
-print(glo_num)
+print(glo_num) # 0,因为修改的函数没执行
+test2() #因为修改的函数没执行
 test1()
-test2()
-print(glo_num)
+test2() #100,先调用函数1
+print(glo_num) #100 调用函数1
