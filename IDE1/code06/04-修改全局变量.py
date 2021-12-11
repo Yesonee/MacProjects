@@ -1,1 +1,1 @@
-a = 100#print(a)def testA():    print(a)def testB():    #如果直接修改 此时的a是局部变量a    a = 300    print(a)def testC():    print(a)testA()testB()testC()
+a = 100#print(a)def testA():    print(a)def testB():    #如果直接修改 此时的a是局部变量a    #全局位置（B函数调用后）打印a得到的不是200而是100    #a = 300    #print(a)    #想要修改全局变量a，值是200    global a  #声明a为全局变量    a =200    print(a)def testC():    print(a)testA()testB()testC()'''总结：    1、如果函数里面直接把变量a=200 此时的a不是全局变量的修改 而是相当于再函数内部声明了一个新的局部变量    2、函数体内部修改全局变量： 先global声明a为全局变量，然后再变量重新赋值    '''
